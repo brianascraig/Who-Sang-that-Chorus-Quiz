@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Test your lyrics knowledge with this quiz to guess who sang that chorus.">
+    <title>Who Sang That Chorus Quiz</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet"> 
+  </head>
+  <body>
+    
+    <header role="banner">
+        <div class="titleContainer">
+          <h1 class="title">Who Sang That Chorus?</h1> 
+        </div>
+
+        <div class="questionScoreDisplay">
+          <div class="questionNumber js-questionNumber">
+           <!--The question number will be updated and displayed here through the javascript file.--> 
+          </div>
+          <div class="score js-score">
+            <!--The score will be updated and displayed here through the javascript file.--> 
+          </div>
+            <button type="button" name="nextQuestionButton" class="nextQuestionButton js-nextQuestionButton hidden">Next</button>
+        </div>
+    </header>
+
+  
+      <section role="region">
+       <div class="answerResults js-answerResults hidden">
+          <div class="rightWrongStatementContainer">
+            <h2 class="rightWrongStatement"></h2>
+            <!-- The statement for whether for answer was right or wrong will be inserted here through the javascript file.-->
+          </div> 
+          
+          <div class="answerExplanationContainer">
+            <p class="answerExplanation js-answerExplanation"></p>
+            <!-- The answer explanation will be inserted here through the javascript file.-->
+          </div>
+        
+        
+          <div class="videoContainer js-videoContainer">
+            <!-- The YouTube video iframe will be inserted here through the javascript file.-->
+          </div> 
+        </div>   
+      </section>
+
+      <section role="region">
+        <div class="startQuiz js-startQuiz">
+          <h2 class="startQuizHeader">Are you ready to test your lyrical skills?</h2>
+          <button type="button" name="startButton" class="startButton js-startButton">Start Quiz</button>
+        </div>
+      </section>
+
+      <section role="region" class="quizQuestionsForm js-quizQuestionsForm hidden">
+        <form action="" method="get" class="quizForm js-quizForm">
+        
+            <div id="songExcerptContainer" class="songExcerptContainer">
+              <p class="songExcerpt">
+               <!-- The song excerpt will be inserted here through the javascript file. -->
+              </p>
+            </div>
+          
+            <fieldset class="questionAnswerChoices">
+              <div class="answerChoicesContainer js-answerChoicesContainer">
+                <!-- The form radio choices will be inserted here through the javascript file.-->
+
+                <!-- The form's submit button will be inserted here through the javascript file.-->
+              </div>
+              
+            </fieldset>
+            
+        </form>
+      </section>
+  
+      <section role="region" class="startQuizOver js-startQuizOver hidden">
+        <button type="button" name="startOverButton" class="startOverButton js-startOverButton">Take the Quiz Again</button>
+      </section>
+    
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
